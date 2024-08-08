@@ -45,9 +45,9 @@ body {
 ul.swan-link-list a {
     color: var(--swan-base-text-color);
     text-decoration: none;
-    margin-top: 18px;
-    margin-bottom: 18px;
-    
+    /* margin-top: 18px; */
+    /* margin-bottom: 18px; */
+
 }
 
 @media (hover:hover) {
@@ -4248,10 +4248,6 @@ a.graphic-button {
     padding: 0
 }
 
-/* --------------------------- Fourth Section ---------------------- */
-/* <style data-href="/static/merch/home-page-vistaprint-na.prod/styles.8664a005a11d88c8b6df.css"
-
-data-identity="gatsby-global-css"> */
 
 
 .coupon-test_selectable-text {
