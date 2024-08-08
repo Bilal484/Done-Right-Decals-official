@@ -1,8 +1,16 @@
+:root{
+    --swan-font-family-graphik: "Graphik", "sans-serif";
+    --swan-font-family-primary: "Graphik", "sans-serif";
+    --swan-font-family-secondary: "Graphik", "sans-serif";
+    --swan-font-family-special: "Tiempos", georgia, times, serif;
+    
+}
 body {
-    font-family: Arial, sans-serif;
+    font-family: var(--swan-font-family-graphik);
     margin: 0;
     padding: 0;
 }
+
 
 .container {
     display: grid;
@@ -60,6 +68,7 @@ body {
     color: #fff;
     border: none;
     cursor: pointer;
+    font-size: 15px;
 }
 
 .button-group .btn:nth-child(2) {
@@ -92,4 +101,25 @@ body {
 .card-examples img {
     max-width: 100%;
     border-radius: 8px;
+}
+.card{
+    margin: 5px;
+    .card-title{
+        font-size: 30px;
+    }
+    .card-text{
+        font-size: 16px;
+        line-height: 2;
+    }
+}
+
+/* carsoule start */
+
+/* carsoule end */
+.political-campaign{
+    background: #3d5d91;
+}
+
+.cards-sample{
+    background: #206767;
 }
