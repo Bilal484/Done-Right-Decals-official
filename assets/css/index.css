@@ -44,7 +44,10 @@ body {
 .swan-button:visited,
 ul.swan-link-list a {
     color: var(--swan-base-text-color);
-    text-decoration: none
+    text-decoration: none;
+    margin-top: 18px;
+    margin-bottom: 18px;
+    
 }
 
 @media (hover:hover) {
@@ -1281,7 +1284,10 @@ body {
 
 .swan :focus:not(.focus-visible),
 .swan:focus:not(.focus-visible) {
-    outline: 0
+    outline: 0;
+    height: 52px;
+    border-radius: 10px;
+
 }
 
 .swan :focus-visible,
