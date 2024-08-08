@@ -11,7 +11,7 @@
     margin-right: 15px; /* Add margin on the right */
     padding-left: 15px; /* Reduced padding for smaller screens */
     padding-right: 15px; /* Reduced padding for smaller screens */
-    background-image: url('/Assets/images/about-us-desktop.webp'); /* Background image */
+    background-image: url('/Assets/images/'); /* Background image */
     background-size: cover;
     background-position: center;
     height: 400px; /* Adjust height for smaller screens */
