@@ -1,15 +1,18 @@
 * {
     margin: 0;
     padding: 0;
-
+    box-sizing: border-box; /* Ensure padding and borders are included in element's width and height */
 }
 
 body {
     font-family: sans-serif;
 }
 
+/* General styles */
+
 #link-top-container {
     padding: 10px;
+    overflow: hidden;
 }
 
 .link-top-tag {
@@ -24,145 +27,125 @@ body {
     font-size: 12px;
     font-weight: 500;
     color: rgba(0, 0, 0, 0.623);
-
 }
 
+/* Hero Section */
 #hero-container {
-
     width: calc(100% - 30px);
-    /* Full width minus the total margin */
-    /* margin-left: 15px;  */
-    /* Add margin on the left */
     margin-right: 15px;
-    /* Add margin on the right */
-    padding-left: 15px;
-    /* Reduced padding for smaller screens */
-    padding-right: 15px;
-    /* Reduced padding for smaller screens */
+    padding-left: 25%;
+    padding-top: 5%;
     background-image: url('/Assets/images/about-us-desktop.webp');
-    /* Background image */
     background-size: cover;
     background-position: center;
     height: 400px;
-    /* Adjust height for smaller screens */
-    overflow: hidden;
-    padding-left: 25%;
-    padding-top: 5%;
-
+    overflow: hidden; /* Hide overflow */
 }
 
 #heading-banner {
-
     width: 600px;
     background-color: #0c2042c4;
     border-radius: 10px;
     height: 250px;
     padding-top: 30px;
+    overflow: hidden; /* Hide overflow */
 }
 
 #heading-banner h1 {
     color: white;
     font-weight: bold;
+    overflow: hidden; /* Hide overflow */
 }
 
 #heading-banner p {
     font-weight: 300;
+    overflow: hidden; /* Hide overflow */
 }
 
-
-
-/* why-choose-us-container */
+/* Why Choose Us Section */
 #why-choose-us {
     margin-top: 50px;
+    overflow: hidden; /* Hide overflow */
 }
 
 .why-choose-us-h3 {
     font-weight: 600;
-
+    overflow: hidden; /* Hide overflow */
 }
 
 #why-choose-us p {
     font-weight: 300;
     font-size: 15px;
-
-
+    overflow: hidden; /* Hide overflow */
 }
 
 .reward-h4 {
     font-weight: bold;
-    font-weight: 15px;
-}
-
-.reward-p {
-    /* font-weight: bold; */
-    font-size: 50px;
+    font-size: 15px;
+    overflow: hidden; /* Hide overflow */
 }
 
 #reward-card {
     height: 200px;
+    overflow: hidden; /* Hide overflow */
 }
 
+/* Join Community Section */
 #container-community {
     background-color: #0c2042e0;
     padding: 40px;
     height: 350px;
-
+    overflow: hidden; /* Hide overflow */
 }
 
 #container-community img {
     width: 100%;
     height: 270px;
+    overflow: hidden; /* Hide overflow */
 }
 
 .join-h {
     padding-top: 35px;
     color: white;
     font-weight: bold;
+    overflow: hidden; /* Hide overflow */
 }
 
 .join-p {
     color: white;
-    /* font-weight: 400; */
     font-size: 17px;
+    overflow: hidden; /* Hide overflow */
 }
 
-
+/* Brand Ambassadors Section */
 #embassedor-container img {
     width: 100%;
     height: 250px;
-
+    overflow: hidden; /* Hide overflow */
 }
 
 #embessor-card h2 {
     font-weight: bold;
     font-size: 20px;
     margin-top: 20px;
-
+    overflow: hidden; /* Hide overflow */
 }
 
 #embessor-card p {
     font-size: 20px;
+    overflow: hidden; /* Hide overflow */
 }
 
-#embasador-section {
-    margin-top: 100px;
-    width: calc(100% - 30px);
-    /* Full width minus the total margin */
-    /* margin-left: 15px;  */
-    /* Add margin on the left */
-
-
+/* Ambassador Sections */
+#embasador-section,
+#embasador-section2 {
+    margin-top: 10px;
     background-image: url('/Assets/images/embessor.webp');
-    /* Background image */
     background-size: cover;
     background-position: center;
-
-    overflow: hidden;
+    overflow: hidden; /* Hide overflow */
     padding-left: 3%;
-    /* padding-top: 5%; */
     height: 350px;
-
-
 }
 
 #embassor-sub {
@@ -172,19 +155,21 @@ body {
     height: 300px;
     padding-top: 30px;
     margin-top: 30px;
-
+    overflow: hidden; /* Hide overflow */
 }
 
 #embassor-sub h2 {
-    color: black;
+    color: white;
     font-weight: bold;
     padding-top: 20px;
+    overflow: hidden; /* Hide overflow */
 }
 
 #embassor-sub p {
     font-weight: 300;
-    color: black;
+    color: white;
     font-size: 20px;
+    overflow: hidden; /* Hide overflow */
 }
 
 #btn-apply {
@@ -195,41 +180,246 @@ body {
     font-weight: bold;
     font-size: 15px;
     border: 1px solid black;
+    overflow: hidden; /* Hide overflow */
 }
 
-#embasador-section2 {
-    margin-top: 10px;
-    width: calc(100% - 30px);
-    /* Full width minus the total margin */
-    /* margin-left: 15px;  */
-    /* Add margin on the left */
-
-
-    background-image: url('/Assets/images/embessor.webp');
-    /* Background image */
-    background-size: cover;
-    background-position: center;
-
-    overflow: hidden;
-    padding-left: 3%;
-    /* padding-top: 5%; */
-    height: 350px;
-
-}
-
+/* Join Our Brand Ambassador Program Section */
 #container-pro {
     padding-left: 20px;
+    overflow: hidden; /* Hide overflow */
 }
 
 #container-pro h2 {
-    /* color: white; */
     font-weight: bold;
     font-size: 30px;
     margin-top: 100px;
+    overflow: hidden; /* Hide overflow */
 }
 
 #container-pro p {
-    /* font-weight: bold; */
     font-size: 20px;
+    overflow: hidden; /* Hide overflow */
+}
 
+/* FAQ Section */
+/* Style for accordion headers (questions) */
+/* Style for accordion headers (questions) */
+.accordion-button {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #0c2042c4; /* Background color for the question */
+    color: #ffffff; /* Text color for better readability on dark background */
+    font-weight: bold;
+    border: none;
+    padding: 1rem;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+}
+
+.accordion-button:not(.collapsed) {
+    background-color: #0a1a33c4; /* Slightly darker background when expanded */
+}
+
+/* Style the icon inside the accordion button */
+.accordion-button::after {
+    content: '\002B'; /* Unicode for "+" icon */
+    font-size: 1.25rem;
+    color: #ffffff; /* Icon color set to white */
+    transition: transform 0.3s ease;
+    margin-left: auto;
+}
+
+.accordion-button:not(.collapsed)::after {
+    content: '\2212'; /* Unicode for "−" icon */
+    transform: rotate(0deg); /* Ensure the icon doesn't rotate when expanded */
+}
+
+/* Style for accordion body (answers) */
+.accordion-body {
+    background-color: #f8f9fa; /* Light background for the answer */
+    color: #333333; /* Text color for the answer */
+    padding: 1rem;
+    border: 1px solid #dddddd; /* Border to separate the answer content */
+    border-top: none; /* Remove top border to connect with the question */
+}
+
+/* Customize the accordion item border */
+.accordion-item {
+    border: none;
+}
+
+/* Adjust accordion item spacing */
+.accordion-item + .accordion-item {
+    margin-top: 1rem;
+}
+
+/* Optional: Add a hover effect to the question */
+.accordion-button:hover {
+    background-color: #0a1a33c4; /* Darken the background slightly on hover */
+    color: white; /* Lighten the text color on hover */
+}
+faq-had{
+    font-weight: bold;
+}
+/* Responsive Design */
+@media (max-width: 768px) {
+    /* Tablet View */
+    #hero-container {
+        padding-left: 10%;
+        padding-top: 10%;
+        height: 300px;
+    }
+
+    #heading-banner {
+        width: 100%;
+        padding: 20px;
+    }
+
+    #heading-banner h1 {
+        font-size: 24px;
+    }
+
+    #heading-banner p {
+        font-size: 14px;
+    }
+
+    #container-community {
+        height: auto;
+        padding: 20px;
+    }
+
+    #container-community img {
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    .join-h {
+        font-size: 20px;
+    }
+
+    .join-p {
+        font-size: 14px;
+    }
+
+    #embasador-section,
+    #embasador-section2 {
+        height: auto;
+        padding: 20px;
+    }
+
+    #embassor-sub {
+        width: 100%;
+        height: auto;
+        padding: 20px;
+    }
+
+    #embassor-sub h2 {
+        font-size: 24px;
+    }
+
+    #embassor-sub p {
+        font-size: 16px;
+    }
+
+    #btn-apply {
+        font-size: 14px;
+    }
+
+    #container-pro {
+        padding: 20px;
+    }
+
+    #container-pro h2 {
+        font-size: 24px;
+        margin-top: 50px;
+    }
+
+    #container-pro p {
+        font-size: 16px;
+    }
+
+    #reward-card {
+        height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Mobile View */
+    #hero-container {
+        padding-left: 5%;
+        padding-top: 15%;
+        height: 250px;
+    }
+
+    #heading-banner {
+        width: 100%;
+        padding: 15px;
+        height: auto;
+    }
+
+    #heading-banner h1 {
+        font-size: 20px;
+    }
+
+    #heading-banner p {
+        font-size: 12px;
+    }
+
+    #container-community {
+        padding: 15px;
+    }
+
+    .join-h {
+        font-size: 18px;
+    }
+
+    .join-p {
+        font-size: 12px;
+    }
+
+    #embasador-section,
+    #embasador-section2 {
+        padding: 15px;
+    }
+
+    #embassor-sub {
+        width: 100%;
+        height: auto;
+        padding: 15px;
+    }
+
+    #embassor-sub h2 {
+        font-size: 20px;
+    }
+
+    #embassor-sub p {
+        font-size: 14px;
+    }
+
+    #btn-apply {
+        font-size: 12px;
+        padding: 15px;
+    }
+
+    #container-pro {
+        padding: 15px;
+    }
+
+    #container-pro h2 {
+        font-size: 20px;
+        margin-top: 30px;
+    }
+
+    #container-pro p {
+        font-size: 14px;
+    }
+
+    #reward-card {
+        height: auto;
+    }
 }
