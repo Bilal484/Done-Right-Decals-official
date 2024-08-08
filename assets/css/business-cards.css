@@ -6,7 +6,8 @@
     
 }
 body {
-    font-family: var(--swan-font-family-graphik);
+    /* font-family: var(--swan-font-family-graphik); */
+    font-family: "Open Sans", sans-serif;
     margin: 0;
     padding: 0;
 }
@@ -19,8 +20,9 @@ body {
 }
 
 .sidebar {
-    background-color: #fff5e1;
+    /* background-color: #fff5e1; */
     padding: 20px;
+    font-size: 25px;
     border-right: 1px solid #ddd;
 }
 
@@ -33,17 +35,18 @@ body {
     padding-left: 0;
 }
 
-.sidebar ul li {
+.sidebar ul li a{
     margin-bottom: 10px;
+    text-decoration: none;
+    
+}
+.sidebar ul li a:hover{
+    margin-bottom: 10px;
+    text-decoration: underline;
     
 }
 
-.main-content {
-    /* padding: 40px; */
-    /* overflow-y: auto; */
-
-}
-.imgWithText{
+.imgWithText .row{
     background-color: #f9f1e7;
 
 }
