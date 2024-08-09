@@ -1,0 +1,125 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: poppins;
+}
+#hero-container {
+    width: 100%;
+    margin: 0 auto;
+    /* padding: 0 15px; */
+    background-image: url('/Assets/images/vp_home_hero_2000.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 600px;
+    display: flex;
+    align-items: left;
+    justify-content: left;
+    position: relative;
+    overflow: hidden;
+    /* border-radius: 15px; */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    animation: fadeIn 1.5s ease-in-out;
+}
+#hero-child-div{
+    width: 400px;
+    background-color: white;
+    padding-top: 100px;
+    text-align: center;
+    font-weight: bold;
+}
+#hero-child-div h1{
+    font-weight: bolder;
+    text-transform: capitalize;
+    font-size: 40px;
+    
+
+
+    
+}
+.hero-child-div-spain{
+    font-size: 65px;
+    font-weight: bold;
+}
+#hero-child-div p{
+    font-size: 20px;
+    font-weight: 600;
+}
+#hero-child-div a{
+    padding: 10px;
+    border-radius: 20px;
+    
+}
+
+/* end hero container */
+#work-container{
+margin-top: 100px;
+}
+#work-container h2{
+    text-align: left;
+    color: black;
+
+}
+#work-container p{
+    font-weight: bold;
+}
+.work-detail-p{
+    font-weight: 400;
+}
+#work-container img{
+    width: 100%;
+    margin-top: 60px;
+}
+
+/* bext */
+.list-group-item {
+    display: flex;
+    align-items: center;
+    color: black;
+    font-size: 1.25rem;
+    transition: color 0.3s ease-in-out;
+    cursor: pointer;
+}
+
+.list-group-item:hover {
+    color: #007BFF;
+}
+
+.icon {
+    font-size: 1.5rem;
+    margin-right: 10px;
+}
+
+.content {
+    display: none;
+}
+
+.content.active {
+    display: block;
+}
+
+.col-md-8 {
+    background-color: #f0f0f0;
+    padding: 50px;
+    border-left: 2px solid transparent;
+    transition: border-color 0.3s ease-in-out;
+}
+
+.list-group-item:hover ~ .col-md-8 {
+    border-color: #007BFF;
+}
+
+.display-1 {
+    font-size: 4.5rem;
+    font-weight: 300;
+    color: #007BFF;
+}
+
+#left-side {
+    padding-left: 0;
+}
+
+#left-side .list-group-item {
+    padding-left: 15px;
+}
