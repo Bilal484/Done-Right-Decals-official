@@ -1,7 +1,7 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; /* Ensure padding and borders are included in element's width and height */
+    box-sizing: border-box;
 }
 
 body {
@@ -9,7 +9,6 @@ body {
 }
 
 /* General styles */
-
 #link-top-container {
     padding: 10px;
     overflow: hidden;
@@ -20,6 +19,11 @@ body {
     font-size: 12px;
     font-weight: 500;
     color: black;
+    transition: color 0.3s ease;
+}
+
+.link-top-tag:hover {
+    color: #0c2042;
 }
 
 .link-top-tag-span {
@@ -33,13 +37,19 @@ body {
 #hero-container {
     width: calc(100% - 30px);
     margin-right: 15px;
-    padding-left: 25%;
+    padding-left: 23%;
     padding-top: 5%;
     background-image: url('/Assets/images/about-us-desktop.webp');
     background-size: cover;
     background-position: center;
     height: 400px;
-    overflow: hidden; /* Hide overflow */
+    overflow: hidden;
+    animation: heroFadeIn 1s ease-in-out;
+}
+
+@keyframes heroFadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
 
 #heading-banner {
@@ -48,46 +58,60 @@ body {
     border-radius: 10px;
     height: 250px;
     padding-top: 30px;
-    overflow: hidden; /* Hide overflow */
+    overflow: hidden;
+    animation: slideUp 1s ease-out;
+}
+
+@keyframes slideUp {
+    from { transform: translateY(20px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
 }
 
 #heading-banner h1 {
     color: white;
     font-weight: bold;
-    overflow: hidden; /* Hide overflow */
+    overflow: hidden;
+    animation: textFadeIn 1s ease-in-out;
+}
+
+@keyframes textFadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
 }
 
 #heading-banner p {
     font-weight: 300;
-    overflow: hidden; /* Hide overflow */
+    overflow: hidden;
 }
 
 /* Why Choose Us Section */
 #why-choose-us {
     margin-top: 50px;
-    overflow: hidden; /* Hide overflow */
+    overflow: hidden;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
 }
 
 .why-choose-us-h3 {
     font-weight: 600;
-    overflow: hidden; /* Hide overflow */
+    overflow: hidden;
+    animation: fadeIn 1s ease-in-out;
 }
 
 #why-choose-us p {
     font-weight: 300;
     font-size: 15px;
-    overflow: hidden; /* Hide overflow */
+    overflow: hidden;
 }
 
 .reward-h4 {
     font-weight: bold;
     font-size: 15px;
-    overflow: hidden; /* Hide overflow */
-}
-
-#reward-card {
-    height: 200px;
-    overflow: hidden; /* Hide overflow */
+    overflow: hidden;
 }
 
 /* Join Community Section */
@@ -95,45 +119,60 @@ body {
     background-color: #0c2042e0;
     padding: 40px;
     height: 350px;
-    overflow: hidden; /* Hide overflow */
+    overflow: hidden;
+    animation: slideUp 1s ease-out;
 }
 
 #container-community img {
     width: 100%;
     height: 270px;
-    overflow: hidden; /* Hide overflow */
+    overflow: hidden;
+    transition: transform 0.5s ease;
+}
+
+#container-community img:hover {
+    transform: scale(1.05);
 }
 
 .join-h {
     padding-top: 35px;
     color: white;
     font-weight: bold;
-    overflow: hidden; /* Hide overflow */
+    overflow: hidden;
+    animation: fadeIn 1s ease-in-out;
 }
 
 .join-p {
     color: white;
     font-size: 17px;
-    overflow: hidden; /* Hide overflow */
+    overflow: hidden;
+    animation: fadeIn 1.5s ease-in-out;
 }
 
 /* Brand Ambassadors Section */
 #embassedor-container img {
     width: 100%;
     height: 250px;
-    overflow: hidden; /* Hide overflow */
+    overflow: hidden;
+    transition: transform 0.5s ease;
+}
+
+#embassedor-container img:hover {
+    transform: scale(1.05);
 }
 
 #embessor-card h2 {
     font-weight: bold;
     font-size: 20px;
     margin-top: 20px;
-    overflow: hidden; /* Hide overflow */
+    overflow: hidden;
+    animation: fadeIn 1s ease-in-out;
 }
 
 #embessor-card p {
     font-size: 20px;
-    overflow: hidden; /* Hide overflow */
+    overflow: hidden;
+    animation: fadeIn 1.5s ease-in-out;
 }
 
 /* Ambassador Sections */
@@ -143,74 +182,96 @@ body {
     background-image: url('/Assets/images/embessor.webp');
     background-size: cover;
     background-position: center;
-    overflow: hidden; /* Hide overflow */
-    padding-left: 3%;
+    padding: 3%;
     height: 350px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    animation: slideIn 1s ease-out;
 }
 
-#embassor-sub {
-    width: 600px;
-    background-color: #0c2042c4;
+@keyframes slideIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+.ambassador-sub {
+    width: 100%;
+    max-width: 600px;
+    background-color: rgba(12, 32, 66, 0.8);
     border-radius: 10px;
-    height: 300px;
-    padding-top: 30px;
-    margin-top: 30px;
-    overflow: hidden; /* Hide overflow */
+    padding: 30px;
+    text-align: center;
+    color: white;
+    position: relative;
+    z-index: 2;
+    animation: fadeIn 1s ease-in-out;
 }
 
-#embassor-sub h2 {
-    color: white;
+.ambassador-sub h2 {
     font-weight: bold;
-    padding-top: 20px;
-    overflow: hidden; /* Hide overflow */
+    margin-bottom: 20px;
 }
 
-#embassor-sub p {
+.ambassador-sub p {
     font-weight: 300;
-    color: white;
-    font-size: 20px;
-    overflow: hidden; /* Hide overflow */
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.section-tagline {
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 10px;
+    text-transform: uppercase;
 }
 
 #btn-apply {
-    padding: 20px;
-    background-color: rgba(0, 0, 0, 0.669);
+    padding: 10px 25px;
+    background-color: rgba(0, 0, 0, 0.8);
     color: white;
     border-radius: 25px;
     font-weight: bold;
     font-size: 15px;
     border: 1px solid black;
-    overflow: hidden; /* Hide overflow */
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#btn-apply:hover {
+    background-color: black;
+    color: white;
+    transform: scale(1.05);
 }
 
 /* Join Our Brand Ambassador Program Section */
 #container-pro {
     padding-left: 20px;
-    overflow: hidden; /* Hide overflow */
+    overflow: hidden;
 }
 
 #container-pro h2 {
     font-weight: bold;
     font-size: 30px;
     margin-top: 100px;
-    overflow: hidden; /* Hide overflow */
+    overflow: hidden;
+    animation: fadeIn 1s ease-in-out;
 }
 
 #container-pro p {
     font-size: 20px;
-    overflow: hidden; /* Hide overflow */
+    overflow: hidden;
+    animation: fadeIn 1.5s ease-in-out;
 }
 
 /* FAQ Section */
-/* Style for accordion headers (questions) */
-/* Style for accordion headers (questions) */
 .accordion-button {
     position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #0c2042c4; /* Background color for the question */
-    color: #ffffff; /* Text color for better readability on dark background */
+    background-color: rgba(0, 0, 0, 0.936);
+    color: #ffffff;
     font-weight: bold;
     border: none;
     padding: 1rem;
@@ -222,53 +283,48 @@ body {
 }
 
 .accordion-button:not(.collapsed) {
-    background-color: #0a1a33c4; /* Slightly darker background when expanded */
+    background-color: #0a1a33c4;
 }
 
-/* Style the icon inside the accordion button */
 .accordion-button::after {
-    content: '\002B'; /* Unicode for "+" icon */
+    content: '\002B';
     font-size: 1.25rem;
-    color: #ffffff; /* Icon color set to white */
+    color: #ffffff !important;
     transition: transform 0.3s ease;
     margin-left: auto;
+    filter: brightness(100%);
 }
 
 .accordion-button:not(.collapsed)::after {
-    content: '\2212'; /* Unicode for "−" icon */
-    transform: rotate(0deg); /* Ensure the icon doesn't rotate when expanded */
+    content: '\2212';
+    transform: rotate(0deg);
+    color: #ffffff !important;
+    filter: brightness(100%);
 }
 
-/* Style for accordion body (answers) */
 .accordion-body {
-    background-color: #f8f9fa; /* Light background for the answer */
-    color: #333333; /* Text color for the answer */
+    background-color: #f8f9fa;
+    color: #333333;
     padding: 1rem;
-    border: 1px solid #dddddd; /* Border to separate the answer content */
-    border-top: none; /* Remove top border to connect with the question */
+    border: 1px solid #dddddd;
+    border-top: none;
 }
 
-/* Customize the accordion item border */
 .accordion-item {
     border: none;
 }
 
-/* Adjust accordion item spacing */
 .accordion-item + .accordion-item {
     margin-top: 1rem;
 }
 
-/* Optional: Add a hover effect to the question */
 .accordion-button:hover {
-    background-color: #0a1a33c4; /* Darken the background slightly on hover */
-    color: white; /* Lighten the text color on hover */
+    background-color: #0a1a33c4;
+    color: white;
 }
-faq-had{
-    font-weight: bold;
-}
+
 /* Responsive Design */
 @media (max-width: 768px) {
-    /* Tablet View */
     #hero-container {
         padding-left: 10%;
         padding-top: 10%;
@@ -349,11 +405,11 @@ faq-had{
 }
 
 @media (max-width: 480px) {
-    /* Mobile View */
     #hero-container {
         padding-left: 5%;
         padding-top: 15%;
         height: 250px;
+        width: 100%;
     }
 
     #heading-banner {

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>About Us</title>
+        <!-- Bootstrap 5 CSS -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+        <!-- Custom CSS -->
+        <link rel="stylesheet" href="assets/css/career.css">
+    </head>
+<body>
+    <!-- hero section -->
+    <div class="container-fluid" id="hero-container">
+        <div class="row">
+            <div class="col-md-4 " id="hero-child-div">
+                <h1>
+                    Let help small businesses succeed, <span class="hero-child-div-spain">together.</span> 
+                </h1>
+                <p>
+                    We use our love of all things tech, design, manufacturing, and customer care to help small businesses feel big.
+                </p>
+                <a href="#" class="btn btn-dark">Explore Jobs</a>
+
+            </div>
+        </div>
+    </div>
+    <!--End  hero section -->
+    <!-- Great Place Work Container -->
+<div class="container" id="work-container">
+    <div class="row">
+    
+        <h2 >We’re a great place to work.
+            Here’s why.</h2>
+        
+        <div class="col-md-2 mt-5">
+            <p  >We’re a remote-first company.</p>
+            <p class="work-detail-p">We want to work with the best people in the world, so we empower you to thrive from locations around the globe. Stay connected to your team while enjoying the flexibility to pursue the life and career you want.</p>
+           
+        </div>
+        <div class="col-md-2 mt-5">
+            <p  >We’re a remote-first company.</p>
+            <p class="work-detail-p">We want to work with the best people in the world, so we empower you to thrive from locations around the globe. Stay connected to your team while enjoying the flexibility to pursue the life and career you want.</p>
+           
+        </div>
+        <div class="col-md-2 mt-5">
+            <p  >We’re a remote-first company.</p>
+            <p class="work-detail-p">We want to work with the best people in the world, so we empower you to thrive from locations around the globe. Stay connected to your team while enjoying the flexibility to pursue the life and career you want.</p>
+           
+        </div>
+        <div class="col-md-6">
+            <img class="rounded " src="assets/images/image 06.jpg" alt="">
+        </div>
+    </div>
+</div>
+<!-- next container -->
+
+<div class="container-fluid my-5">
+    <div class="row">
+        <div class="col-md-4 d-flex flex-column justify-content-center border-end border-3" id="left-side">
+            <a href="#" class="py-3 list-group-item list-group-item-action border-0" data-bs-toggle="content1">
+                <span class="icon">🛠️</span> 
+                <span>We're investing in tools that make your job more rewarding.</span>
+            </a>
+            <a href="#" class="py-3 list-group-item list-group-item-action border-0" data-bs-toggle="content2">
+                <span class="icon">🏢</span> 
+                <span>We work as a close-knit team to make a massive impact.</span>
+            </a>
+            <a href="#" class="py-3 list-group-item list-group-item-action border-0" data-bs-toggle="content3">
+                <span class="icon">🌍</span> 
+                <span>We foster a diverse, international culture where everyone is valued.</span>
+            </a>
+            <a href="#" class="py-3 list-group-item list-group-item-action border-0" data-bs-toggle="content4">
+                <span class="icon">💧</span> 
+                <span>We're creating a more sustainable business, and we're doing it fast.</span>
+            </a>
+        </div>
+        <div class="col-md-8 d-flex align-items-center justify-content-center">
+            <div class="text-center">
+                <div id="content1" class="content active">
+                    <h1 class="display-1 text-primary">15M+</h1>
+                    <p class="mt-3">You could say that we're obsessed with our customers. All 15+ million of them. When you join us - whether you're working in technology, design, marketing, or operations - you'll be able to make key contributions on a global scale, from wherever you are.</p>
+                </div>
+                <div id="content2" class="content">
+                    <h1 class="display-1 text-primary">Close-Knit Team</h1>
+                    <p class="mt-3">We are a close-knit team working together to create a massive impact in everything we do. Join us and be part of something bigger.</p>
+                </div>
+                <div id="content3" class="content">
+                    <h1 class="display-1 text-primary">Diverse Culture</h1>
+                    <p class="mt-3">We embrace a diverse and international culture where every voice is heard and valued, making us stronger and more innovative.</p>
+                </div>
+                <div id="content4" class="content">
+                    <h1 class="display-1 text-primary">Sustainable Business</h1>
+                    <p class="mt-3">We are committed to building a more sustainable business, rapidly adapting and evolving to make the world a better place.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    const items = document.querySelectorAll('.list-group-item');
+    const contents = document.querySelectorAll('.content');
+    
+    items.forEach(item => {
+        item.addEventListener('mouseover', () => {
+            contents.forEach(content => content.classList.remove('active'));
+            document.getElementById(item.getAttribute('data-bs-toggle')).classList.add('active');
+        });
+    });
+    
+</script>
+
+</body>
+</html>
