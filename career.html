@@ -253,13 +253,13 @@
  </div>
  
 
-  <!-- <div class="container-fluid" id="benefit-container">
+ <!-- <div class="container-fluid" id="benefit-container">
     <div class="row">
         <div class="col-md-3">
             <h2>Let's talk about benefits.</h2>
             <p>We’re a global company, so our benefits vary based on where you are. But no matter what, we empower you to live a life you love.</p>
         </div>
-        <div class="col-md-9 d-flex flex-column position-relative overflow-hidden">
+        <div class="col-md-9 d-flex flex-column position-relative overflow-hidden" id="carousel-container">
             <div id="carousel-behaviour" class="card-carousel">
                 <div class="card" style="width: 18rem;">
                     <img src="assets/images/pena-icon.svg" class="card-img-top" alt="Parental Leave Icon">
@@ -268,6 +268,7 @@
                         <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus soluta, obcaecati sed illum placeat inventore.</p>
                     </div>
                 </div>
+            
                 <div class="card" style="width: 18rem;">
                     <img src="assets/images/pena-icon.svg" class="card-img-top" alt="Parental Leave Icon">
                     <div class="card-body">
@@ -275,6 +276,7 @@
                         <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus soluta, obcaecati sed illum placeat inventore.</p>
                     </div>
                 </div>
+                
                 <div class="card" style="width: 18rem;">
                     <img src="assets/images/pena-icon.svg" class="card-img-top" alt="Parental Leave Icon">
                     <div class="card-body">
@@ -282,6 +284,7 @@
                         <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus soluta, obcaecati sed illum placeat inventore.</p>
                     </div>
                 </div>
+                
                 <div class="card" style="width: 18rem;">
                     <img src="assets/images/pena-icon.svg" class="card-img-top" alt="Parental Leave Icon">
                     <div class="card-body">
@@ -289,20 +292,15 @@
                         <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus soluta, obcaecati sed illum placeat inventore.</p>
                     </div>
                 </div>
-                <div class="card" style="width: 18rem;">
-                    <img src="assets/images/pena-icon.svg" class="card-img-top" alt="Parental Leave Icon">
-                    <div class="card-body">
-                        <h5 class="card-title">Parental Leave</h5>
-                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus soluta, obcaecati sed illum placeat inventore.</p>
-                    </div>
-                </div>
+        
             </div>
             <div class="carousel-control prev">&#10094;</div>
             <div class="carousel-control next">&#10095;</div>
             <div class="carousel-indicators"></div>
         </div>
     </div>
-</div>
+</div> 
+
 
 
 <div class="container my-5">
@@ -348,7 +346,7 @@
     <div class="text-center mt-3">
         <button id="pauseBtn" class="btn btn-dark rounded-pill px-4">Pause</button>
     </div>
-</div> -->
+</div>-->
 <script>
     const items = document.querySelectorAll('.list-group-item');
     const contents = document.querySelectorAll('.content');
@@ -362,13 +360,16 @@
     document.addEventListener('DOMContentLoaded', function() {
         const carousel = document.querySelector('#carousel-behaviour');
         const cards = document.querySelectorAll('.card-carousel .card');
-        const totalCards = cards.length;
-        const visibleCards = window.innerWidth < 768 ? 1 : 3; // Show 1 card on mobile, 3 on larger screens
-        const cardWidth = cards[0].offsetWidth + 10; // Width of a card including gap
-        let currentIndex = 0;
-    
-        // Create dots dynamically based on the number of cards
         const indicatorsContainer = document.querySelector('.carousel-indicators');
+        const controlNext = document.querySelector('.carousel-control.next');
+        const controlPrev = document.querySelector('.carousel-control.prev');
+        const totalCards = cards.length;
+        
+        let visibleCards = window.innerWidth < 768 ? 1 : 3; // Show 1 card on mobile, 3 on larger screens
+        let currentIndex = 0;
+        const cardWidth = cards[0].offsetWidth + 10; // Width of a card including gap
+        
+        // Create dots dynamically based on the number of cards
         const totalSlides = Math.ceil(totalCards / visibleCards);
         for (let i = 0; i < totalSlides; i++) {
             const dot = document.createElement('span');
@@ -419,8 +420,8 @@
             dot.addEventListener('click', () => goToSlide(index));
         });
     
-        document.querySelector('.carousel-control.next').addEventListener('click', nextSlide);
-        document.querySelector('.carousel-control.prev').addEventListener('click', prevSlide);
+        controlNext.addEventListener('click', nextSlide);
+        controlPrev.addEventListener('click', prevSlide);
     
         // Initialize the carousel
         showSlide(0);
@@ -430,10 +431,36 @@
             const newVisibleCards = window.innerWidth < 768 ? 1 : 3;
             if (newVisibleCards !== visibleCards) {
                 visibleCards = newVisibleCards;
+                // Recalculate cardWidth
+                const cardWidth = cards[0].offsetWidth + 10;
                 showSlide(currentIndex); // Recalculate slide position after resizing
             }
         });
     });
+    
+    
+        // Adjust carousel on window resize
+        window.addEventListener('resize', () => {
+            const newVisibleCards = window.innerWidth < 768 ? 1 : 3;
+            if (newVisibleCards !== visibleCards) {
+                visibleCards = newVisibleCards;
+                // Recalculate cardWidth
+                const cardWidth = cards[0].offsetWidth + 10;
+                showSlide(currentIndex); // Recalculate slide position after resizing
+            }
+        });
+    
+    
+    
+        // Adjust carousel on window resize
+        window.addEventListener('resize', () => {
+            const newVisibleCards = window.innerWidth < 768 ? 1 : 3;
+            if (newVisibleCards !== visibleCards) {
+                visibleCards = newVisibleCards;
+                showSlide(currentIndex); // Recalculate slide position after resizing
+            }
+        });
+
     
     // Initialize the Bootstrap carousel
 const carouselElement = document.querySelector('#customCarousel');

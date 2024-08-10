@@ -721,3 +721,63 @@ h2 {
         flex: 0 0 100%;
     }
 }
+#carousel-behaviour {
+    position: relative; /* Ensure it's positioned relative to contain children */
+    display: flex;
+    overflow: hidden; /* Hide overflowing cards */
+    transition: transform 0.5s ease; /* Smooth sliding effect */
+}
+
+.card-carousel {
+    display: flex; /* Align cards in a row */
+    transition: transform 0.5s ease; /* Smooth sliding effect */
+}
+
+.card {
+    margin-right: 10px; /* Space between cards */
+}
+
+.carousel-indicators {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.carousel-indicators .dot {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background: #bbb;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.carousel-indicators .dot.active {
+    background: #717171;
+}
+
+#carousel-container {
+    background-color: #f0f8ff; /* Default background color */
+    padding: 20px; /* Padding for the carousel container */
+}
+
+.carousel-control {
+    cursor: pointer;
+    font-size: 2em;
+    padding: 10px;
+    background: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border-radius: 50%;
+    position: absolute; /* Ensure controls are positioned */
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.carousel-control.prev {
+    left: 10px; /* Position to the left */
+}
+
+.carousel-control.next {
+    right: 10px; /* Position to the right */
+}
+
