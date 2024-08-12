@@ -39,6 +39,7 @@ div {
     /* border-radius: 8px; */
     overflow: hidden;
     border: none;
+    text-decoration: none !important;
 }
 
 .card-image {
