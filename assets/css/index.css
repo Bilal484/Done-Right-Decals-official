@@ -119,7 +119,7 @@ ul.swan-link-list a {
     font-size: var(--swan-font-size-1);
     line-height: 1.4em;
     min-height: var(--swan-elements-launcher-height-mini);
-    padding: 0 var(--swan-button-padding-horizontal)
+    padding: 12px var(--swan-button-padding-horizontal)
 }
 
 @media only screen and (max-width:1023px) {
@@ -1312,7 +1312,7 @@ a {
     font-size: inherit;
     font-weight: inherit;
     margin: 0;
-    padding: 0;
+    padding: 12px;
     text-align: inherit;
     -webkit-text-decoration: var(--swan-elements-link-text-decoration-standard);
     text-decoration: var(--swan-elements-link-text-decoration-standard);
