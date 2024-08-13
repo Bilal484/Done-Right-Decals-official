@@ -1,0 +1,19 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Rajdhani', sans-serif;
+
+}
+#access-container{
+    padding: 30px;
+    text-align: justify;
+}
+#access-container h2{
+    font-weight: bold;
+}
+#access-container p{
+    font-weight: 600;
+    font-size: 18px;
+}
