@@ -4527,6 +4527,20 @@ a {
     .site-header-nav {
         display: none
     }
+
+    .product-categories-sections .swan-standard-tile {
+        width: 50%;
+        position: relative;
+        top: 51px;
+        left: 87px;
+    }
+
+    .swan-standard-tile {
+        width: 50%;
+        position: relative;
+        top: 51px;
+        left: 87px;
+    }
 }
 
 @media only screen and (max-width:1023px) {
@@ -6629,7 +6643,7 @@ a.swan-link-skin-cta .swan-icon {
     }
 
     .swan-grid-container.swan-grid-container .swan-col-xs-6 {
-        width: 50%;
+        /* width: 50%; */
     }
 }
 
@@ -7219,7 +7233,7 @@ button.owl-prev span {
     border: 1px solid rgb(110, 110, 110);
     color: rgb(101, 101, 101);
     border-radius: 50%;
-    padding: 0px 23px 8px;
+    padding: 0px 23px 0px;
     font-size: 45px;
 }
 
@@ -7227,12 +7241,12 @@ button.owl-next span {
     border: 1px solid rgb(110, 110, 110);
     color: rgb(101, 101, 101);
     border-radius: 50%;
-    padding: 0px 23px 8px;
+    padding: 0px 23px 0px;
     font-size: 45px;
 }
 
 .home-demo {
-    margin: 0 40px;
+    margin: 0 22px;
 }
 
 .owl-theme .owl-nav [class*="owl-"]:hover {
