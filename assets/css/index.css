@@ -138,6 +138,7 @@ ul.swan-link-list a {
 .swan-button.swan-button-skin-primary:link,
 .swan-button.swan-button-skin-primary:visited {
     color: var(--swan-color-white-900)
+    
 }
 
 .swan-button.swan-button-skin-primary:active {
