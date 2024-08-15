@@ -71,7 +71,9 @@ a {
 }
 
 #work-container p {
-    font-weight: bold;
+    font-size: 17px;
+    font-family: sans-serif;
+    
 }
 
 .work-detail-p {
@@ -278,7 +280,7 @@ h2 {
     padding-top: 200px;
 }
 
-#valued-container h2,
+
 #valued-container p {
     text-align: justify;
 }
