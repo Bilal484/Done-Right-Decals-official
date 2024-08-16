@@ -247,21 +247,38 @@ body {
 }
 
 .owl-carousel .owl-nav [class*='owl-'].owl-prev {
-    background-color: transparent;
+    background-color: white;
     color: black;
     left: -50px;
     font-size: 20px;
     border: 1px solid black;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all ease-in-out 0.3s;
+
 }
 
 .owl-carousel .owl-nav [class*='owl-'].owl-next {
-    background-color: transparent;
+    background-color: white;
+
     color: black;
     right: -50px;
     font-size: 20px;
     border: 1px solid black;
-}
+    box-shadow: 10 4px 6px rgba(0, 0, 0, 0.372);
+    transition: all ease-in-out 0.3s;
 
+
+}
+.owl-carousel .owl-nav [class*='owl-'].owl-prev:hover{
+width: 70px;
+height: 70px;
+
+
+}
+.owl-carousel .owl-nav [class*='owl-'].owl-next:hover{
+    width: 70px;
+height: 70px;
+}
 .owl-carousel .owl-dots {
     text-align: center;
     padding-right: 20px;
@@ -273,9 +290,11 @@ body {
     border-radius: 100%;
     width: 20px;
     height: 20px;
+    padding-right: 20px;
     margin: 0 5px;
     display: inline-block;
     text-align: center;
+    
 
 }
 
@@ -292,10 +311,7 @@ body {
     width: 400px;
     margin-left: 30px;
 }
-.cloned:active{
-    margin:0px 0px 0px 20px  !important;
 
-}
 /* container-support heading */
 #container-support-heading {
     margin-top: 100px;
@@ -435,6 +451,12 @@ body {
         padding-right: 30px;
 
     }
+    .testimonial-item{
+        margin-left: 0px;
+
+    }
+    
+
     .container-fluid{
         padding-left: 30px;
         padding-right: 30px;
