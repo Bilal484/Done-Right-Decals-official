@@ -451,6 +451,9 @@ height: 70px;
         padding-right: 30px;
 
     }
+    #hero-container{
+        width: 100%;
+    }
     .testimonial-item{
         margin-left: 0px;
 
