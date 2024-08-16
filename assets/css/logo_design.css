@@ -1,38 +1,37 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-.Banner{
-    margin-left: 100px;
-    padding-top: 150px;
+
+.Banner {
+    /* margin-left: 100px;
+    padding-top: 150px; */
 }
-h2{
-    font-size: 2rem;
-}
-.banner-image{
+
+.banner-image {
     margin-top: 20px;
-    
+
 }
-.banner-image img{
+
+.banner-image img {
     width: 100%;
 }
-.second{
+
+.second {
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
     text-align: center;
-    
+
 }
-.h6,h6{
-    display: flex;
-    justify-content: center;
-}
-.BG_COLOR_SET{
+
+.BG_COLOR_SET {
     background-color: #c0e6df;
 
 }
-.you{
+
+.you {
     padding-top: 100px;
 }
