@@ -1387,7 +1387,8 @@ input:disabled+.swan-selection-set-label:hover {
 .swan-button:visited,
 ul.swan-link-list a {
     color: var(--swan-base-text-color);
-    text-decoration: none
+    text-decoration: none;
+    background-color: white;
 }
 
 @media (hover:hover) {
@@ -1477,7 +1478,8 @@ ul.swan-link-list a {
 
 .swan-button.swan-button-skin-primary:link,
 .swan-button.swan-button-skin-primary:visited {
-    color: var(--swan-color-white-900)
+    color: var(--swan-color-white-900);
+    
 }
 
 .swan-button.swan-button-skin-primary:active {
@@ -2661,7 +2663,11 @@ a {
 a:hover {
     color: var(--swan-elements-link-font-color-hover);
     -webkit-text-decoration: var(--swan-elements-link-text-decoration-hover);
-    text-decoration: var(--swan-elements-link-text-decoration-hover)
+    text-decoration: var(--swan-elements-link-text-decoration-hover);
+
+}
+.review-a{
+    margin-top: 20px;
 }
 
 :where(a:focus-visible) {
@@ -2943,7 +2949,9 @@ ul.swan-link-list a {
 .swan-text-5.swan-text-5,
 .swan-text-m1.swan-text-m1 {
     font-weight: var(--swan-base-text-weight);
-    word-break: normal
+    word-break: normal;
+    font-size: 100px;
+
 }
 
 .swan-text-m1.swan-text-m1 {
@@ -3101,4 +3109,7 @@ ul.swan-link-list a {
 
 .st2 {
     fill: #6ecff5
+}
+.review-a{
+    padding-top: 20px;
 }
