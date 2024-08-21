@@ -175,8 +175,10 @@ body {
     border: 1px solid black;
     text-align: center;
     margin-left: 5px;
-    background-color: rgba(128, 128, 128, 0.477);
-    color: black;
+    background-color:goldenrod;
+    color: white;
+    font-weight: 600;
+    
 }
 
 .my-crads-container {
@@ -230,7 +232,7 @@ body {
 }
 
 /* Media Queries for Tablet and Mobile (768px and below) */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) and (min-width:650px) {
     .rating-cotainer {
         padding: 20px;
     }
@@ -245,7 +247,7 @@ body {
         font-size: 18px;
     }
 
-    .btn-review, .review-p, .btn-search, .btn-dropdown {
+    .btn-review,  .btn-search, .btn-dropdown {
         width: 100%;
         font-size: 16px;
         padding: 15px;
@@ -253,9 +255,15 @@ body {
     }
 
     .progress {
-        width: 100%;
+        width: 150%;
     }
-
+    .number-p{
+        margin-left: 70px;
+    }
+    .span-star-p{
+        font-weight: 100;
+        width: 150px;
+    }
     .btn-p {
         align-items: center;
     }
@@ -267,6 +275,9 @@ body {
 
     .quality-product-p {
         font-size: 16px;
+    }
+    .btn-dropdown{
+        margin-right: -15px;
     }
 }
 
